@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#10150d" />
+    <meta
+      name="description"
+      content="Explore Pepeto ($PEPETO), its ecosystem, cross-chain bridge, exchange concept, token screening, tokenomics and project resources."
+    />
+    <meta
+      name="keywords"
+      content="Pepeto, Pepeto Coin, PEPETO token, PepetoSwap, Pepeto bridge, Pepeto tokenomics, Pepeto whitepaper, Pepeto audit, meme coin ecosystem"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta
+      property="og:title"
+      content="Pepeto — The Frog-Powered Crypto Ecosystem"
+    />
+    <meta
+      property="og:description"
+      content="Explore Pepeto's published ecosystem features, token allocation and project resources."
+    />
+    <title>Pepeto ($PEPETO) | Ecosystem, Tokenomics & Resources</title>
+    <style>
+      :root {
+        --bg: #10150d;
+        --panel: #182016;
+        --lime: #b8f34a;
+        --green: #75bd38;
+        --text: #f5f7ed;
+        --muted: #aab49d;
+        --line: #34432b;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font:
+          15px/1.6 Inter,
+          system-ui,
+          sans-serif;
+      }
+      a {
+        color: var(--lime);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #d4ff83;
+      }
+      .wrap {
+        width: min(1160px, calc(100% - 40px));
+        margin: auto;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        background: #10150ded;
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav {
+        height: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--text);
+        font-weight: 900;
+        font-size: 22px;
+      }
+      .frog {
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
+        border-radius: 14px;
+        background: var(--lime);
+        color: #17200d;
+        font-size: 22px;
+      }
+      nav {
+        display: flex;
+        gap: 22px;
+        font-size: 13px;
+        font-weight: 700;
+      }
+      nav a {
+        color: #d5ddc9;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        padding: 12px 20px;
+        background: var(--lime);
+        color: #15200d;
+        font-weight: 850;
+      }
+      .btn:hover {
+        background: #d4ff83;
+        color: #15200d;
+        text-decoration: none;
+      }
+      .hero {
+        padding: 82px 0 74px;
+        background:
+          radial-gradient(ellipse at 78% 35%, #557b253b, transparent 40%),
+          linear-gradient(140deg, #131b10, #10150d 62%);
+      }
+      .eyebrow {
+        display: inline-block;
+        border: 1px solid #607c3a;
+        border-radius: 30px;
+        padding: 6px 12px;
+        color: var(--lime);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      h1 {
+        font-size: clamp(40px, 6vw, 70px);
+        line-height: 1.04;
+        letter-spacing: -2px;
+        max-width: 760px;
+        margin: 22px 0 18px;
+      }
+      h1 span {
+        color: var(--lime);
+      }
+      .hero p {
+        max-width: 650px;
+        color: #c0cbb4;
+        font-size: 17px;
+        margin: 0 0 26px;
+      }
+      .outline {
+        border: 1px solid #64734e;
+        border-radius: 999px;
+        padding: 11px 19px;
+        color: var(--text);
+        font-weight: 750;
+        margin-left: 8px;
+      }
+      .note {
+        font-size: 11px !important;
+        color: #8e9a81 !important;
+        margin-top: 18px !important;
+      }
+      section {
+        padding: 58px 0;
+      }
+      .tag {
+        color: var(--lime);
+        font-size: 11px;
+        font-weight: 850;
+        letter-spacing: 1.7px;
+        text-transform: uppercase;
+      }
+      h2 {
+        font-size: clamp(27px, 4vw, 39px);
+        line-height: 1.15;
+        margin: 9px 0 12px;
+      }
+      .intro {
+        color: var(--muted);
+        max-width: 700px;
+        margin: 0 0 27px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .card {
+        background: linear-gradient(145deg, var(--panel), #151d13);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 23px;
+      }
+      .symbol {
+        width: 42px;
+        height: 42px;
+        border-radius: 13px;
+        background: #b8f34a1c;
+        color: var(--lime);
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .card h3 {
+        font-size: 17px;
+        margin: 0 0 7px;
+      }
+      .card p {
+        color: var(--muted);
+        font-size: 13px;
+        margin: 0;
+      }
+      .dark {
+        background: #141b11;
+      }
+      .token-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .total {
+        background: linear-gradient(135deg, #26391b, #172116);
+        border: 1px solid #4c6832;
+        border-radius: 18px;
+        padding: 27px;
+      }
+      .big {
+        font-size: clamp(32px, 5vw, 48px);
+        font-weight: 900;
+        color: var(--lime);
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .alloc {
+        display: grid;
+        gap: 13px;
+      }
+      .allocrow {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 7px;
+        font-size: 13px;
+      }
+      .bar {
+        height: 8px;
+        background: #2b3525;
+        border-radius: 20px;
+        overflow: hidden;
+        grid-column: 1/-1;
+      }
+      .bar i {
+        height: 100%;
+        display: block;
+        background: linear-gradient(90deg, var(--green), var(--lime));
+      }
+      .resources {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 13px;
+      }
+      .resource {
+        padding: 17px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: var(--panel);
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+      }
+      .resource strong {
+        font-size: 13px;
+      }
+      .resource small {
+        display: block;
+        color: var(--muted);
+      }
+      .faq {
+        border-top: 1px solid var(--line);
+      }
+      details {
+        padding: 18px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      summary {
+        cursor: pointer;
+        font-weight: 750;
+      }
+      details p {
+        color: var(--muted);
+        font-size: 13px;
+        margin: 12px 0 0;
+      }
+      .warning {
+        border: 1px solid #75602a;
+        background: #2a2413;
+        border-radius: 14px;
+        padding: 17px;
+        color: #e8dba9;
+        font-size: 12px;
+      }
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 27px 0;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      .foot {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+      @media (max-width: 800px) {
+        nav {
+          display: none;
+        }
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .token-grid {
+          grid-template-columns: 1fr;
+        }
+        .resources {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width: 520px) {
+        .wrap {
+          width: calc(100% - 28px);
+        }
+        .nav {
+          height: 66px;
+        }
+        .brand {
+          font-size: 19px;
+        }
+        .nav > .btn {
+          padding: 9px 13px;
+          font-size: 12px;
+        }
+        .hero {
+          padding: 60px 0;
+        }
+        .grid,
+        .resources {
+          grid-template-columns: 1fr;
+        }
+        section {
+          padding: 44px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="#"><span class="frog">♟</span> PEPETO</a>
+        <nav>
+          <a href="#ecosystem">Ecosystem</a><a href="#tokenomics">Tokenomics</a
+          ><a href="#faq">FAQ</a><a href="#resources">Resources</a>
+        </nav>
+        <a
+          class="btn"
+          href="https://pepetocoin.org/"
+          target="_blank"
+          rel="noopener"
+          >Official Website ↗</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <span class="eyebrow">● The frog-powered crypto ecosystem</span>
+          <h1>More than a meme.<br /><span>A whole ecosystem.</span></h1>
+          <p>
+            Pepeto presents a crypto ecosystem built around a cross-chain
+            bridge, a zero-fee exchange concept and AI-assisted token screening.
+            Explore the project's published features, token allocation and
+            reference links.
+          </p>
+          <a
+            class="btn"
+            href="https://pepetocoin.org/"
+            target="_blank"
+            rel="noopener"
+            >Visit Pepeto ↗</a
+          ><a
+            class="outline"
+            href="https://pepetocoin.net/assets/documents/whitepaper.pdf"
+            target="_blank"
+            rel="noopener"
+            >Read Whitepaper ↗</a
+          >
+          <p class="note">
+            Independent informational page. Not an official Pepeto property and
+            not an offer to buy tokens.
+          </p>
+        </div>
+      </section>
+      <section id="ecosystem">
+        <div class="wrap">
+          <div class="tag">Pepeto utility ecosystem</div>
+          <h2>Three tools. One connected vision.</h2>
+          <p class="intro">
+            The following features are described by the Pepeto project. Product
+            availability, technical performance and fee claims should be
+            independently checked before use.
+          </p>
+          <div class="grid">
+            <article class="card">
+              <div class="symbol">⇄</div>
+              <h3>Cross-chain bridge</h3>
+              <p>
+                The project describes a lock-and-mint bridge intended to connect
+                Ethereum, BNB Chain and Solana, with on-chain verification and
+                cross-chain transfers.
+              </p>
+            </article>
+            <article class="card">
+              <div class="symbol">↗</div>
+              <h3>PepetoSwap</h3>
+              <p>
+                Pepeto describes a decentralized exchange designed for
+                memecoins, with a zero-trading-fee model and cross-chain
+                liquidity ambitions.
+              </p>
+            </article>
+            <article class="card">
+              <div class="symbol">⌕</div>
+              <h3>AI token screening</h3>
+              <p>
+                The project says its screening engine checks token contracts for
+                suspicious code patterns, including hidden minting functions and
+                honeypot risks.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="tokenomics" class="dark">
+        <div class="wrap">
+          <div class="tag">Token allocation</div>
+          <h2>$PEPETO tokenomics</h2>
+          <p class="intro">
+            Allocation figures below are reproduced from the project's published
+            whitepaper. They are project-published information, not
+            independently verified circulating-supply data.
+          </p>
+          <div class="token-grid">
+            <div class="total">
+              <div class="muted">Published total supply</div>
+              <div class="big">420 Trillion</div>
+              <p class="muted">420,000,000,000,000 $PEPETO</p>
+              <a
+                href="https://pepetocoin.net/assets/documents/whitepaper.pdf"
+                target="_blank"
+                rel="noopener"
+                >Source: Pepeto whitepaper ↗</a
+              >
+            </div>
+            <div class="card alloc">
+              <div class="allocrow">
+                <span>Presale</span><strong>30%</strong>
+                <div class="bar"><i style="width: 30%"></i></div>
+              </div>
+              <div class="allocrow">
+                <span>Staking</span><strong>30%</strong>
+                <div class="bar"><i style="width: 30%"></i></div>
+              </div>
+              <div class="allocrow">
+                <span>Marketing</span><strong>20%</strong>
+                <div class="bar"><i style="width: 20%"></i></div>
+              </div>
+              <div class="allocrow">
+                <span>Liquidity</span><strong>12.5%</strong>
+                <div class="bar"><i style="width: 12.5%"></i></div>
+              </div>
+              <div class="allocrow">
+                <span>Project development</span><strong>7.5%</strong>
+                <div class="bar"><i style="width: 7.5%"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="resources">
+        <div class="wrap">
+          <div class="tag">Research & verification</div>
+          <h2>Project resources</h2>
+          <p class="intro">
+            Use primary project documents and independent reference sources.
+            Verify contract details on the relevant blockchain explorer before
+            interacting with any token or wallet.
+          </p>
+          <div class="resources">
+            <a
+              class="resource"
+              href="https://pepetocoin.org/"
+              target="_blank"
+              rel="noopener"
+              ><div>
+                <strong>Official Pepeto website</strong
+                ><small>Project announcements and information</small>
+              </div>
+              ↗</a
+            >
+            <a
+              class="resource"
+              href="https://pepetocoin.net/assets/documents/whitepaper.pdf"
+              target="_blank"
+              rel="noopener"
+              ><div>
+                <strong>Whitepaper</strong
+                ><small>Token supply and project outline</small>
+              </div>
+              ↗</a
+            >
+            <a
+              class="resource"
+              href="https://app.solidproof.io/projects/pepetocoin?audit=0d9297a6-8932-4fa2-9fc3-56ca8757b9ad"
+              target="_blank"
+              rel="noopener"
+              ><div>
+                <strong>SolidProof profile</strong
+                ><small>Audit and project security notes</small>
+              </div>
+              ↗</a
+            >
+            <a
+              class="resource"
+              href="https://etherscan.io/address/0x588B92b0B793A339A21eF89320EcfA49de249503"
+              target="_blank"
+              rel="noopener"
+              ><div>
+                <strong>Ethereum contract reference</strong
+                ><small>Verify the address before use</small>
+              </div>
+              ↗</a
+            >
+            <a
+              class="resource"
+              href="https://x.com/Pepetocoin"
+              target="_blank"
+              rel="noopener"
+              ><div>
+                <strong>Pepeto on X</strong><small>Social updates</small>
+              </div>
+              ↗</a
+            >
+            <a
+              class="resource"
+              href="https://docs.etherscan.io/"
+              target="_blank"
+              rel="noopener"
+              ><div>
+                <strong>Etherscan documentation</strong
+                ><small>Inspect Ethereum data</small>
+              </div>
+              ↗</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="dark">
+        <div class="wrap">
+          <div class="tag">Quick answers</div>
+          <h2>Frequently asked questions</h2>
+          <div class="faq">
+            <details>
+              <summary>What is Pepeto?</summary>
+              <p>
+                Pepeto is presented by its project as a meme-coin ecosystem
+                combining a token, exchange concept, cross-chain bridge and
+                token-screening tools.
+              </p>
+            </details>
+            <details>
+              <summary>Which networks does the project mention?</summary>
+              <p>
+                The official site describes connections involving Ethereum, BNB
+                Chain and Solana. Check current official documentation for
+                supported networks and live functionality.
+              </p>
+            </details>
+            <details>
+              <summary>What is the published token supply?</summary>
+              <p>
+                The project's whitepaper lists a total supply of 420 trillion
+                tokens and allocations for presale, staking, marketing,
+                development and liquidity.
+              </p>
+            </details>
+            <details>
+              <summary>Has the token contract been audited?</summary>
+              <p>
+                A SolidProof project profile and audit reference are linked
+                above. An audit is not a guarantee that a token, website, bridge
+                or exchange is safe. Review the report scope and limitations
+                yourself.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="wrap">
+          <div class="warning">
+            <strong>Crypto risk notice:</strong> Crypto assets and presales are
+            highly speculative and can result in total loss. Project feature
+            descriptions and token allocations are based on published project
+            materials and may change. Third-party audits do not guarantee safety
+            or investment performance. Never share a seed phrase or private key,
+            and independently verify domains and contract addresses.
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap foot">
+        <span>© <span id="year"></span> Pepeto informational demo</span
+        ><span
+          >Not affiliated with Pepeto or its operators.
+          <a href="https://pepetocoin.org/" target="_blank" rel="noopener"
+            >Official site ↗</a
+          ></span
+        >
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
